@@ -26,14 +26,17 @@ const NavBar = () => {
   return (
     <header>
       <nav>
-        <div className="nav-container w-full flex items-center justify-between">
-          <div className="logo">Logo</div>
+        <div className="nav-container w-full flex items-center justify-between  py-2 px-4 md:px-6">
+          <div className="logo bg-primary">Logo</div>
           <div className="nav-links">
             <div className=" lg:hidden">
               <DropdownMenu>
                 <DropdownMenuTrigger>
                   <Avatar>
-                    <AvatarImage src={user?.profilePic} alt={user?.email[0]} />
+                    <AvatarImage
+                      src={user?.profilePic}
+                      alt={user?.firstName?.charAt(1)}
+                    />
                     <AvatarFallback>{user?.firstName || "NA"}</AvatarFallback>
                   </Avatar>
                 </DropdownMenuTrigger>

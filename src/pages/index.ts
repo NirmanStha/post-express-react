@@ -1,6 +1,9 @@
-export { default as Login } from "./Auth";
 export { default as Posts } from "./Posts";
 export { default as Profile } from "./Profile";
 export { default as Home } from "./Home";
 export { default as Auth } from "./Auth";
 export { default as Layout } from "./Layout";
+export { default as Login } from "./auth/Login";
+export { default as Register } from "./auth/Register";
+export { default as ProtectedRoutes } from "./auth/ProtectedRoutes";
+export { default as PublicRoutes } from "./auth/PublicRoutes";
